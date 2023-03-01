@@ -55,7 +55,7 @@ class Application(tk.Tk):
 
         ####################################### LAYOUT ####################################################
 
-        self.title('Voltage Sweep - Keithley 2612B')
+        self.title('Voltage Sweep - Keithley 2450')
 
         # The main frame contains the main canvas and the vertical scrollbar
         self.main_frame = tk.Frame(self)
@@ -65,8 +65,8 @@ class Application(tk.Tk):
         self.xscrollbar_frame = tk.Frame(self)
         self.xscrollbar_frame.pack(side = 'bottom', fill = 'both', expand = True, anchor = 'n')
 
-        # The main canvas contains the sub frame.
-        self.main_canvas = tk.Canvas(self.main_frame, height = 604, width = 1200)
+        # The main canvas contains the sub frame. 604
+        self.main_canvas = tk.Canvas(self.main_frame, height = 800, width = 1200)
         self.main_canvas.pack(side= 'left', fill='both', anchor = 'n', expand=True)
 
         # Initializing scrollbars
